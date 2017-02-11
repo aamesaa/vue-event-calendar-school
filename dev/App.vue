@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>vue-event-calendar</h1>
+    <h1>vue-event-calendar-dev</h1>
     <h2 class="t-center">Defalut template</h2>
     <vue-event-calendar :events="demoEvents"></vue-event-calendar>
     <h2 class="t-center">Custom template</h2>
@@ -21,12 +21,44 @@ export default {
   data () {
     return {
       demoEvents: [{
-        date: '2016/12/15',
-        title: 'eat',
+        date: '2017/02/10',
+        title: '今天也放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/11',
+        title: '今天也放假',
         desc: 'longlonglong description'
       },{
         date: '2017/02/12',
-        title: 'this is a title'
+        title: '端午节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/13',
+        title: '国庆节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/14',
+        title: '中秋节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/15',
+        title: '清明节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/16',
+        title: '端午节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/17',
+        title: '国庆节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/18',
+        title: '中秋节放假',
+        desc: 'longlonglong description'
+      },{
+        date: '2017/02/19',
+        title: '今天也放假'
       }]
     }
   }

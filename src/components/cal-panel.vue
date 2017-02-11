@@ -12,14 +12,15 @@
       <div class="dates" >
         <div v-for="date in dayList" class="item"
           :class="{
-            today: date.status ? (today==date.date) : false,
+            today: date.status ? (today==date.date && date.title == undefined) : false,
             event: date.status ? (date.title != undefined) : false
           }">
           <p class="date-num"
             @click="handleChangeCurday(date)"
             :style="{color: (date.title != undefined) ? calendar.options.color : 'inherit'}">{{date.status ? date.date.split('/')[2] : '&nbsp'}}</p>
-          <span v-if="date.status ? (today==date.date) : false" class="is-today" :style="style.todayStyle" ></span>
+          <span v-if="date.status ? (today==date.date && date.title == undefined) : false" class="is-today" :style="style.todayStyle" ></span>
           <span v-if="date.status ? (date.title != undefined) : false" class="is-event" :style="style.eventStyle"></span>
+          <span v-if="date.status ? (date.title != undefined) : false" class="is-event-title" :style="style.eventTitleStyle">{{date.title}}</span>
         </div>
       </div>
     </div>

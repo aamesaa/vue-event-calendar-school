@@ -121,7 +121,7 @@ export default {
       width: 50%;
       padding: 100px 50px;
       .date-num{
-        line-height: 50px;
+        line-height: 82.5px;
       }
     }
     .events-wrapper{
@@ -142,7 +142,7 @@ export default {
       width: 100%;
       padding: 10px 5px;
       .date-num{
-        line-height: 42px;
+        line-height: 74px;
       }
     }
     .events-wrapper{
@@ -200,7 +200,7 @@ export default {
         text-align: center;
         font-size: 1rem;
         .item{
-          line-height: 50px;
+          line-height: 82.5px;
           float: left;
           width: 14.285%;
         }
@@ -239,6 +239,21 @@ export default {
             z-index: 2;
             margin-left: -18px;
             margin-top: -19px;
+          }
+          .is-event-title{
+            // content: '';
+            // border: 1px solid @base-orange;
+            background-color: #fff;
+            // border-radius: 50%;
+            width: 36px;
+            height: 18px;
+            font-size: 9px;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            // z-index: 2;
+            margin-left: -17px;
+            margin-top: -20px;
           }
           &.today{
             color: @white;
